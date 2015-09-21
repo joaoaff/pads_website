@@ -31,12 +31,12 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.admin',        # The admin site
+    'django.contrib.auth',         # An authentication system
+    'django.contrib.contenttypes', # A framework for content types
+    'django.contrib.sessions',     # A session framework
+    'django.contrib.messages',     # A messaging framework
+    'django.contrib.staticfiles',  # A framework for managing static files
 )
 
 MIDDLEWARE_CLASSES = (
@@ -87,7 +87,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
