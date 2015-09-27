@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',     # A session framework
     'django.contrib.messages',     # A messaging framework
     'django.contrib.staticfiles',  # A framework for managing static files
+    'pads',                        # Website do PADS
 )
 
 MIDDLEWARE_CLASSES = (
