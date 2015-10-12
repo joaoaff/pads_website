@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Início-PADS</title>
+	<LINK REL="SHORTCUT ICON" href="{% static "pads/images/logo1.png" %}">
+    <!-- Bootstrap -->
+    <!--<link href="{% static "pads/css/bootstrap.css" %}" rel="stylesheet">-->
+	<link href="{% static "pads/css/main.css" %}" rel="stylesheet">
+	
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+	
+	<!-- Header: Apresentação e LOGO -->
+
+   <div id="pagina">
+
+		<table>
+				<thead>
+					<tr>
+						<th>
+							<div id="header-logo"> 
+								<img class ="logo" src="{% static "pads/images/logo1.png" %}" alt="Logo do PADS">
+							</div> 
+						</th>
+						<th>
+							<div id="header-name" class="color-theme-name">
+									<p>PADS</p> 
+									<p  class="top-border">Laboratório para o Processamento  Analógico e Digital de Sinais</p>
+									<p>PEE/COPPE/UFRJ</p>
+							</div>				
+						</th>
+						<th class="valign_bottom">
+							<div id="header-languages">
+									<a href=#><img src="{% static "pads/images/pt.jpg" %}" alt="pt"></a>
+									<a href=#><img src="{% static "pads/images/en.png" %}" alt="en"></a>
+									<a href=#><img src="{% static "pads/images/es.png" %}" alt="es"></a>
+							</div>
+						</th>					
+					</tr>
+					<tr>
+						<th colspan="3" class="nav color-theme">					
+									<ul>
+										<li> <a href=# > Início </a> </li>
+										<li> <a href=# > Equipe </a></li>
+										<li> <a href=# > Atividades </a></li>
+										<li> <a href=# > Publicações </a></li>
+										<li> <a href=# > Contato </a></li>
+										<li> <a href="https://webmail.pads.ufrj.br/cgi-bin/openwebmail/openwebmail.pl" > Webmail </a></li>
+									</ul>
+						</th>	
+					</tr>					
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="3">
+							<div id="main">
+								<p>	The PADS has been originated from a project developed to the Petrobras (Petróleo Brasileiro S.A.), from a signal processing and acquisition system for non-destructive testing methods. Click here if you wish to know more about this project. From financial resources of the Petrobras and the PADCT (Programa de Apoio ao Desenvolvimento Científico e Tecnológico), an initial structure (the first computers and equipments) to the laboratory was mounted. The PADS has been established definitively in August of 1997 at room H-320 of the Center of Technology. </p>
+							</div>
+						</td>  
+					</tr>
+                
+					<tr>
+						<td colspan="3">
+							<!-- Parte Inferior da Página -->
+							<div class="nav color-theme">
+									<p id="bottom">PADS   -   PEE/COPPE/UFRJ   Centro de Tecnologia, sala H-320 e H-206   Cidade Universitária, Ilha do Fundão   -   Rio de Janeiro   -   RJ   -   BRASIL <br>
+									Caixa Postal 68504 21945-970 - +55 (21) 2562-8570 / 2562-8569 / 2562-8568 <span> Copyright © 2015 </span></p>
+							</div>
+						</td>
+					</tr>              
+				</tbody>
+        </table>
+   
+   </div>
+   </body>
+</html>
