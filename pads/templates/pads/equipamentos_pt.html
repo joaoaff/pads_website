@@ -55,7 +55,7 @@
 										<li> <a href="{% url 'equipe' %}" > Equipe </a></li>
 										<li> <a href=# > Atividades </a></li>
 										<li> <a href=# > Publicações </a></li>
-                                        <li> <a href="{% url 'equipamentos' %}" > Equipamentos </a></li>
+                                        <li> <a href=# > Equipamentos </a></li>
 										<li> <a href=# > Contato </a></li>
 										<li> <a href="https://webmail.pads.ufrj.br/cgi-bin/openwebmail/openwebmail.pl" > Webmail </a></li>
 									</ul>
@@ -66,15 +66,15 @@
 					<tr>
 						<td colspan="3">
 							<div id="main">
-								<h3> O PADS</h3>
-								<p>	The PADS has been originated from a project developed to the Petrobras (Petróleo Brasileiro S.A.), from a signal processing and acquisition system for non-destructive testing methods. Click here if you wish to know more about this project. From financial resources of the Petrobras and the PADCT (Programa de Apoio ao Desenvolvimento Científico e Tecnológico), an initial structure (the first computers and equipments) to the laboratory was mounted. The PADS has been established definitively in August of 1997 at room H-320 of the Center of Technology. </p>
-								<h3> Áreas de Atuação</h3>
+								<h3> Equipamentos</h3>
 								<p>
+								{% if equipamento_lista %}
 									<ul>
-										<li>Processamento Analógico  e Digital de Sinais</li>
-										<li>Visão Computacional</li>
-										<li>Circuitos Integrados</li>
+									{% for equipamento in equipamento_lista %}
+									    <li>{{ equipamento.marca }} {{ equipamento.modelo }}</li>
+									{% endfor %}
 									</ul>
+								{% endif %}
 								</p>
 							</div>
 						</td>  

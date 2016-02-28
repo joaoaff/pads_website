@@ -1,10 +1,17 @@
 /*geral*/
 *{
-	font-family:serif;
+	font-family:'Open Sans';
+	font-size:15px;
 }
 p{
-	font-size:17px;
 	text-indent: 2em;
+}
+
+
+h3{
+	color:#336699;
+	font-weight:bold;
+	font-size:18px;
 }
 
 /* img {
@@ -15,7 +22,8 @@ p{
 
 #pagina{
 	width:960px;
-	margin:auto;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 /* Config da Tabela de página*/
@@ -26,6 +34,10 @@ table {
 
 table th{
 	white-space:nowrap;
+}
+
+body{
+	background-color: /*#CCFFCC*//*CCCCFF*/
 }
 
 .valign_bottom{
@@ -45,8 +57,9 @@ table th{
 }
 
 .color-theme a:hover{
-		background-color:#669999;/*#66CC99;*/
+		background-color:#336699;/*#669999;#66CC99;*/
 		/* color:#99CCCC; */
+		/* color:rgb(0,104,56); */
 }
 
 .color-theme-name p{
@@ -55,31 +68,41 @@ table th{
 
 /*Figura do Logo*/
 .logo{
-	 width:110px;
-	 height:110px;
+	 width:162px;
+	 height:162px;
 }
 
 /*Header*/
 #header-logo{
-	margin-left:28px;
+	margin-left:10px;
 }
 
 
 #header-name {
 	margin-top:2.6px;
-	margin-left:17px;
+	margin-left:10px;
 }
 
 #header-name p{
-	font-size:24px;
+	font-size:28px;
 	text-align:left;
+	font-weight: normal;
 	text-indent:0em;
-	margin:0em;
-	width:initial;
+	margin:0px;
+}
+
+#header-name .title{
+	border-bottom:3px solid;
+	font-size:40px;
 }
 
 .top-border{
-	text-decoration:overline;
+ 	/* text-decoration:overline; */
+	border-top:3px solid;
+	display:inline;
+	position:relative;
+	/*left:-13px;*/
+	padding:0px;
 }
 
 
@@ -103,7 +126,6 @@ table th{
 
 /*Barra de Navegação*/
 .nav{
-	font-size:17px;
 	position:relative;
 	/* border-radius:100px; */
 	
@@ -124,33 +146,112 @@ table th{
 }
 
 .nav  li:last-child{
-	border-right:17.4px solid transparent;
+	border-right:3px solid transparent;
 }
 
 .nav a{
 	text-decoration:none;
 	text-align:center;
+	font-size:24px;
+	font-weight:normal;
     position:relative;
 	padding: 4.3pt 17pt 4.3pt 17pt;
 }
 
 
 .nav a:hover{
-	border-radius:80px;
+	border-radius:10px;
 }
 
 /*Corpo*/
 #main{
-	width:70%; 
-	margin:auto; 
+	width:960px; 
+	padding:10px;
+	margin:auto;
 	text-align:justify;
+}
+
+
+.title_h1{
+	padding:0px;
+	margin:0px;
+}
+
+.title_h1 img{
+	float:left;
+	width: 50px;
+	height: 50px;
+	margin:5px;
+	z-index: 1;
+}
+
+.title_h1 h1{
+	font-size:32px;
+	font-weight:normal;
+	position: relative;
+	top: 0px;
+	left: 10px;
+	width:930px;
+	height:50px;
+	border-radius:30px;
+	margin: 0px;
+	padding: 5px;
+	background: rgb(0,104,56);
+	/* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left, white 20%,rgb(0,104,56)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, white 20%, rgb(0,104,56)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, white 20%, rgb(0,104,56)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, white 20%, rgb(0,104,56)); /* Standard syntax */
+	z-index: -1;
+}
+
+
+
+#user {
+	padding: 10px;
+	margin: 5px;
+}
+
+#user_photo{
+	float:left;
+	width:120px;
+	height:160px;
+}
+
+#user_photo .photo{
+	width:120px;
+	height:160px;
+}
+
+#user_info{
+	width:790px;
+	height:160px;
+	margin-left:130px;
+	padding:0px;
+}
+
+#user_info ul{
+	list-style-type: none;
+	margin:0px;
+	padding-left:5px;
+}
+
+
+#user_info .name{
+	font-size: 27px;
+	font-weight: normal;
+}
+
+#user_info .other{
+	font-size: 18.7px;
+	font-weight: normal;
 }
 
 /*BOTTOM p*/
 #bottom{
 	position:relative;
 	margin:0px;
-	padding:0.87px 0px 0.87px 0px;
+	padding:1px 0px 1px 0px;
 	text-align:center;
 	font-size: 12px;
 	font-weight:bold;
