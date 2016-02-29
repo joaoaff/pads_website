@@ -1,18 +1,20 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html>
   <head>
 	<!--Fonte-->
-	<link href='../../static/pads/css/opensans.css' rel='stylesheet' type='text/css'>
+	<link href="{% static "pads/css/opensans.css" %}" rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     
 	<title>Início-PADS</title>
-	<LINK REL="SHORTCUT ICON" href="../../static/pads/figuras/logo1.png">
+	<LINK REL="SHORTCUT ICON" href="{% static "pads/figuras/logo1.png" %}">
     <!-- Bootstrap -->
-    <!--<link href="../../static/pads/css/bootstrap.css" rel="stylesheet">-->
-	<link href="../../static/pads/css/main.css" rel="stylesheet">
+    <!--<link href="{% static "pads/css/bootstrap.css" %}" rel="stylesheet">-->
+	<link href="{% static "pads/css/main.css" %}" rel="stylesheet">
 	
 	
   </head>
@@ -31,7 +33,7 @@
 					<tr>
 						<th>
 							<div id="header-logo"> 
-								<img class ="logo" src="../../static/pads/figuras/logo1.png" alt="Logo do PADS">
+								<img class ="logo" src="{% static "pads/figuras/logo1.png" %}" alt="Logo do PADS">
 							</div> 
 						</th>
 						<th>
@@ -46,9 +48,9 @@
 						</th>
 						<th class="valign_bottom">
 							<div id="header-languages">
-									<a href="https://webmail.pads.ufrj.br/cgi-bin/openwebmail/openwebmail.pl"><img src="../../static/pads/figuras/icon_mail.png" alt="pt"></a>
-									<a href="{% url 'main_pt' %}"><img src="../../static/pads/figuras/pt.jpg" alt="pt"></a>
-									<a href=#><img src="../../static/pads/figuras/en.png" alt="en"></a>
+									<a href="https://webmail.pads.ufrj.br/cgi-bin/openwebmail/openwebmail.pl"><img src="{% static "pads/figuras/icon_mail.png" %}" alt="pt"></a>
+									<a href="{% url 'main_pt' %}"><img src="{% static "pads/figuras/pt.jpg" %}" alt="pt"></a>
+									<a href=#><img src="{% static "pads/figuras/en.png" %}" alt="en"></a>
 							</div>
 						</th>					
 					</tr>
@@ -71,13 +73,13 @@
 						<td colspan="3">
 							<div id="main">
 								<div class="title_h1">
-									<img src="../../static/pads/figuras/header_icon.png"/>
+									<img src="{% static "pads/figuras/header_icon.png" %}"/>
 									<h1>Professors </h1>
 								</div>
 								{% if professor_lista %}
 								<div id="user">
 									<div id="user_photo">
-										<img class="photo" src="../../static/pads/figuras/Users/users_logo.png" alt="User">
+										<img class="photo" src="{% static "pads/figuras/Users/users_logo.png" %}" alt="User">
 									</div>
 									<div id="user_info">
 										<ul>
@@ -91,14 +93,14 @@
 								</div>
 								{% endif %}
 								<div class="title_h1">
-									<img src="../../static/pads/figuras/header_icon.png"/>
+									<img src="{% static "pads/figuras/header_icon.png" %}"/>
 									<h1>Students </h1>
 								</div>
 								{% if aluno_lista %}
 									{% for aluno in aluno_lista %}
 									<div id="user">
 										<div id="user_photo">
-											<img class="photo" src="../../static/pads/figuras/Users/users_logo.png" alt="User">
+											<img class="photo" src="{% static "pads/figuras/Users/users_logo.png" %}" alt="User">
 										</div>
 										<div id="user_info">
 											<ul>
